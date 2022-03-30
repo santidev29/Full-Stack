@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+@media (max-width: 768px) {
+
+  form {
+    align-items: center;
+    padding-top: 30px;
+  }
+
+}
+
+body {
+  background-color: rgb(109, 92, 92);
+}
+
+label {
+  color: white;
+  font-size: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input {
+  max-width: 200px;
+  min-width: 200px;
+  height: 15px;
+}
+
+.carselect {
+  max-width: 200px;
+}
+
+</style>
+
+<body>
+
+  <form action="http://httpbin.org/post" method="POST">
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName">
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName">
+
+    <label for="email">e-mail</label>
+    <input type="email" id="email" name="email">
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phone">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+
+    <label for="confirm-password">Confirm Password</label>
+    <input type="password" id="confirm-password" name="confirm-password">
+
+    <select class="carselect" name="Car">
+      <option value="mercedes">Mercedes</option>
+      <option value="tesla">Tesla</option>
+      <option value="volvo">Volvo</option>
+      <option value="bmw">BMW</option>
+      <option value="mini">Mini</option>
+      <option value="ford">Ford</option>
+    </select>
+
+    <div>
+      <button type="submit">Create Account</button>
+    </div>
+    
+  </form>
+
+</body>
+
+<script>
+
+</script>
+
+</html>
